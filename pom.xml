@@ -25,6 +25,7 @@
 	</properties>
 
 	<dependencies>
+		<!-- ============================ Initial Dependencies Start ========================= -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -48,8 +49,8 @@
 			<artifactId>spring-boot-autoconfigure</artifactId>
 			<version>1.5.9.RELEASE</version>
 		</dependency>
-
-		<!-- ============================Swagger2gger Start ================================= -->
+		<!-- ============================ Initial Dependencies End =========================== -->
+		<!-- ============================ Swagger2gger Start ================================= -->
 		<dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
@@ -60,7 +61,33 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.7.0</version>
 		</dependency>
-		<!-- ============================Swagger2gger End   ================================= -->
+		<!-- ============================ Swagger2gger End   ================================= -->
+		<!-- ============================ Apache Shiro Start ================================= -->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.2.3</version>
+		</dependency>
+		<dependency>
+			<groupId>nekohtml</groupId>
+			<artifactId>nekohtml</artifactId>
+			<version>1.9.6.2</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-thymeleaf</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<!-- ============================ Apache Shiro End =================================== -->
+		<!-- ============================ MySQL Start ======================================== -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+		</dependency>
+		<!-- ============================ MySQL End        =================================== -->
 
 	</dependencies>
 

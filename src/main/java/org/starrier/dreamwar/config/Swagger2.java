@@ -1,4 +1,4 @@
-package org.starrier.dreamwar.swagger;
+package org.starrier.dreamwar.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 /**
  * @Author Starrier
- * @Time 2018/2/1.
+ * @Time 2018/2/3.
  */
 @Configuration
 @EnableWebMvc
@@ -25,7 +25,7 @@ public class Swagger2 {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(this.apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("org.starrier.dreamwar.controller"))
+                .apis(RequestHandlerSelectors.basePackage("org.starrier.dreamwar.web"))
                 .paths(PathSelectors.any())
                 .build();
     }
